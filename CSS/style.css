@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
+}
+
+header .mobile {
+    display: none;
+}
+
+header .desktop {
+    background: #F9F4FB;
+    padding: 0 0 0 10.9rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .desktop .header-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+header .desktop .header-text h1 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 5.8287rem;
+    line-height: 7.3rem;
+    color: #B52184;
+}
+
+header .desktop .header-text p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    color: #312D64;
+}
+
+header .desktop .header-text button {
+    width: fit-content;
+    margin-top: 17.9rem;
+    border: .4rem solid #B52184;
+    border-radius: 760.109px;
+    color: #B52184;
+    padding: 2rem 0;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+header .desktop .header-text button:hover {
+    transform: scale(1.1);
+}
+
+header .desktop .header-image img {
+    height: 73.236rem;
+    max-height: 90vh;
+}
+
+main {
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6.4rem 11.1rem;
+    gap: 2rem;
+}
+
+main .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3.2rem;
+    gap: 3rem;
+    width: 36.6rem;
+    height: 44.8rem;
+    background: #FFFFFF;
+    box-shadow: .0rem .4rem 1.6rem rgba(0, 0, 0, 0.25);
+    border-radius: 2.4rem;
+
+}
+
+main .card img {
+    width: 9.7rem;
+}
+
+main .card h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.53022rem;
+    line-height: 4.4rem;
+    color: #B52184;
+}
+
+main .card p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #312D64;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    background: #F9F4FB;
+}
+
+.section-form {
+    width: 50%;
+    padding: 9.5rem 10.9rem; 
+} 
+
+.section-form h3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4.2rem;
+    line-height: 5.3rem;
+    margin-bottom: 2rem;
+    color: #B52184;
+}
+
+.section-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.section-form form input {
+    width: 100%;
+    padding: 1.5rem 3.5rem;
+    border-radius: 2rem;
+}
+
+.section-form form .input-box{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.section-form form .input-box label{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 1.5rem;
+}
+
+.section-form form .input-box label ion-icon {
+    color: #B52184;
+}
+
+.section-form form textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 12.6rem;
+    max-height: 12.6rem;
+    border: .15rem solid #312D64;
+    border-radius: 1.6rem;
+    padding: 1.2rem 1.6rem 1.6rem;
+    font-size: 1.6rem;
+}
+
+.section-form form textarea::placeholder {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 140%;
+}
+
+.section-form form button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 1.6rem;
+    gap: 1rem;
+    color: #FFFFFF;
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+    border-radius: 1.6rem;
+    cursor: pointer;
+}
+
+.section-form form button:hover {
+    background: #413c86dc;
+}
+
+.section-img {
+    width: 50%;
+}
+
+.section-img img {
+    width: 100%;
+    height: 61.2rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 7.8rem;
+    color: #FFF;
+    background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+}
+
+@media (max-width: 1000px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+        align-items: center;
+    }
+
+    header .mobile .header-image img{
+        Width: 36.4rem;
+        Height: 37rem;
+        margin-bottom: 1.7rem;
+    }
+
+    header .mobile .header-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .mobile .header-text h1 {
+        font-weight: 900;
+        font-size: 3.2rem;
+        line-height: 4rem;
+        text-align: center;
+        color: #B52184;
+        margin-bottom: .5rem;
+    }
+
+    header .mobile .header-text p {
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-align: center;
+        color: #312D64;
+        margin-bottom: 3.5rem;
+    }
+
+    header .mobile .header-text button {
+        Width: 5.859rem;
+        Height: 10.5rem;
+        padding: 3rem 1.4rem;
+        color: #B52184;
+        border: .4rem solid #B52184;
+        border-radius: 760.109px;
+        margin-bottom: 9.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5rem;
+    }
+
+    main {
+        padding: 5.2rem 3.9rem;
+    }
+
+    main .card {
+        padding: 2.6rem;
+        gap: 2rem;
+        width: 35.2rem;
+        height: 33.7rem;
+    }
+
+    main .card img {
+        width: 8rem;
+    }
+
+    main .card h2 {
+        font-weight: 900;
+        font-size: 2.9rem;
+        line-height: 3.7rem;
+    }
+
+    main .card p {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    section .section-img img {
+        display: none;
+    }
+
+    section {
+        display: inline;
+        width: 100%;
+       
+    }
+
+    .section-form {
+        width: 100%;
+        max-width: 60rem;
+        padding: 7.5rem 4rem 6.5rem;      
+    } 
+
+}
+
+@media (width < 425px) {
+    header .mobile .header-image img{
+        Width: 30.4rem;
+        Height: 37rem;
+        margin-bottom: 1.7rem;
+    }
+
+    main .card img {
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    main .card h2 {
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+    }
+    
+    main .card p {
+        font-size: 1.4rem;
+    }    
+}
